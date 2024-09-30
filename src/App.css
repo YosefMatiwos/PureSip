@@ -1,42 +1,98 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  /* padding: 2rem; */
+  /* text-align: center; */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+button {
+  color: red;
 }
 
 .card {
-  padding: 2em;
+  /* background: rgb(165, 161, 223); */
+  background: linear-gradient(180deg, rgba(165, 161, 223, 1) 40%,
+      rgba(218, 181, 205, 0) 100%);
+  color: black;
+  margin: .5rem;
+  border-radius: .5rem;
+  max-width: 400px;
+  min-width: 330px;
+  height: 100%;
 }
 
-.read-the-docs {
-  color: #888;
+.description {
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-wrap: wrap;
+}
+
+.cardImg {
+  width: 100%;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.prep-time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: .5rem;
+  margin-bottom: 0;
+}
+
+.time {
+  padding-left: .5rem;
+  margin: 0;
+}
+
+.cardTitle {
+  margin-top: .5rem;
+  margin-bottom: 0;
+}
+
+.title-time {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa {
+  padding-right: 1px;
+  color: aliceblue;
+}
+
+.clock {
+  color: black;
+  font-size: larger;
+}
+
+.checked {
+  color: yellow;
+}
+
+.rating {
+  padding-left: 1rem;
+}
+
+.mainContainer {
+  /* max-width: 500px; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+}
+
+@media screen and (max-width:1040px) {
+  .mainContainer {
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+  }
+}
+
+@media screen and (max-width:700px) {
+  .mainContainer {
+    grid-template-columns: auto;
+  }
 }
