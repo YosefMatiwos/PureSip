@@ -4,13 +4,17 @@
   margin-top: 0;
   /* padding: 2rem; */
   /* text-align: center; */
+  --charcoal: #122620;
+  --cream: #f4ebd0;
+  --tan: #b68d40;
+  --gold: #d6ad60;
 }
 
 .card {
-  /* background: rgb(165, 161, 223); */
-  background: linear-gradient(180deg, rgba(165, 161, 223, 1) 0%,
-      rgba(165, 161, 223, 0.3) 100%);
-  color: black;
+  background: var(--gold);
+  /* background: linear-gradient(180deg, rgba(165, 161, 223, 1) 0%,
+      rgba(165, 161, 223, 0.3) 100%); */
+  color: var(--charcoal);
   margin: .5rem;
   border-radius: .5rem;
   max-width: 400px;
@@ -64,7 +68,7 @@
 }
 
 .clock {
-  color: black;
+  color: var(--charcoal);
   font-size: larger;
 }
 
@@ -80,9 +84,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(165, 161, 223, 1);
+  background-color: var(--gold);
   padding-left: 1rem;
   padding-right: 1rem;
+  color: var(--charcoal);
 }
 
 .mainContainer {
@@ -98,7 +103,7 @@ header {
   right: 30px;
   top: 49px;
   background-color: transparent;
-  color: #BE6081;
+  color: var(--charcoal);
   cursor: pointer;
 }
 
@@ -106,7 +111,8 @@ input[type=text] {
   padding: 9px;
   border: none;
   font-size: 18px;
-  background-color: #F4ADCD;
+  background-color: var(--cream);
+  color: var(--charcoal);
   text-align: left;
   text-indent: 8px;
   outline: none;

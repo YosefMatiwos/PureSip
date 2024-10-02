@@ -6,7 +6,13 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   /* background-color: #242424; */
-  background-color: #cac9bf;
+  /* background-color: #cac9bf; */
+  background-color: var(--cream);
+
+  --charcoal: #122620;
+  --cream: #f4ebd0;
+  --tan: #b68d40;
+  --gold: #d6ad60;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
