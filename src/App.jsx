@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css'; // Om du har dina stilar här
+import './App.css'; 
 import PreviewCard from './components/PreviewCard';
 import Header from './components/Header';
 
@@ -23,7 +23,7 @@ function App() {
         </div>
         <div className="footer-info">
           <div className="company-info">
-            <img src="path_to_logo" alt="ITHS bild" className="logo" />
+          <img src="/images2/ITHS.picture.png" alt="ITHS bild" className="logo" />
             <p>PureSip</p>
             <p>Trekantsvägen 1, 117 43 Stockholm</p>
             <p><a href="mailto:info@iths.se">info@iths.se</a></p>
@@ -34,8 +34,9 @@ function App() {
             <a href="#">Personuppgiftspolicy</a>
           </div>
           <div className="social-media">
-            <a href="#" className="fa fa-facebook"></a>
-            <a href="#" className="fa fa-instagram"></a>
+            
+            <a href="https://www.facebook.com/ITHogskolan" target="_blank" rel="noopener noreferrer" className="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/ithogskolan/" target="_blank" rel="noopener noreferrer" className="fa fa-instagram"></a>
           </div>
         </div>
       </footer>
@@ -44,5 +45,6 @@ function App() {
 }
 
 export default App;
+
 
 

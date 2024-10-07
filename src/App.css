@@ -180,7 +180,7 @@ input[type=text] {
 }
 
 .footer-links a, .social-media a {
-  color: var(--cream);
+  color: var(--charcoal);
   text-decoration: none;
   margin: 0 0.5rem;
 }
@@ -189,13 +189,15 @@ input[type=text] {
   color: var(--gold);
 }
 
+
 .logo {
-  max-width: 50px;
+  max-width: 250px;
+  margin-right: 1rem;
 }
 
 .footer {
-  background-color: var(--charcoal);
-  color: var(--gold); 
+  background-color: var(--gold);
+  color: var(--charcoal); 
   padding: 1rem;
   text-align: center;
   margin-top: 1rem; 
@@ -204,11 +206,6 @@ input[type=text] {
 .logo-text-container {
   display: flex;
   align-items: center; 
-}
-
-.logo {
-  max-width: 50px;
-  margin-right: 1rem; 
 }
 
 .company-details {
@@ -226,12 +223,13 @@ input[type=text] {
 }
 
 .social-media a {
-  color: var(--cream); 
+  color: var(--charcoal); 
   font-size: 2rem; 
   text-decoration: none;
 }
 
 .social-media a:hover {
-  color: var(--gold); 
+  color: var(--charcoal); 
 }
+
 
